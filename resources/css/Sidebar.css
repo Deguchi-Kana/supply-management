@@ -1,0 +1,69 @@
+.sidebar {
+    background-color: #6C5F5B;
+    color: #F5F5F5;
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    .logo-section {
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        width: 10vw;
+        margin-bottom: auto;
+        text-decoration: none;
+        color: inherit;
+        transition: background-color 0.3s;
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 1vw 1vw;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+
+        .menu-item i {
+            margin-right: 1vw;
+        }
+
+        .menu-item.inactive:hover {
+            background-color: inherit;
+            color: inherit;
+        }
+
+        .menu-item:not(.inactive):hover {
+            background-color: #f28d3f;
+            color: #F5F5F5;
+        }
+
+        .menu-item.logout {
+            margin-top: auto;
+        }
+    }
+
+    .menu-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .menu-link:hover {
+        color: #F5F5F5;
+    }
+}

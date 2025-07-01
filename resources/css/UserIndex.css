@@ -1,0 +1,34 @@
+
+.index {
+    .content {
+        & div {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .register-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100px;
+        height: 25px;
+        padding: 10px;
+        font-size: 16px;
+        color: #4F4A45;
+        background-color: #f28d3f;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #e07b34;
+        }
+    }
+    .user-table {
+        th {
+            text-align: center;
+        }
+    }
+}
